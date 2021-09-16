@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarValueApi</name>
+    </assembly>
+    <members>
+        <member name="M:CarValueApi.Controllers.CarValueAppController.GetAllCommands">
+            <summary>
+             The Get method returns all the records in the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CarValueApi.Controllers.CarValueAppController.GetCommandByid(System.Int32)">
+            <summary>
+            The Get method is called with the particular id in search for
+            it returns one record from the database using the id called in the api
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CarValueApi.Controllers.CarValueAppController.RunCommand(CarValueApi.Model.Root)">
+            <summary>
+            This post method is used to calculate the current car value of the car with the inputed parameters
+            you need the following post parameters: "make", "model", "year" "yearOfPurchase", "price", "color",
+            "milage", "plateNumber". The make, model, color and plateNumber are all string variables
+            the year, yearOfPurchase, price and milage are all integers. 
+            The api returns a new value; the carCurrentPrice which is in decimal.
+            </summary>
+            <param name="root"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CarValueApi.Controllers.CarValueAppController.BuyCar(CarValueApi.Model.BuyCar)">
+            <summary>
+            you need the following post parameters: "car_id", "surname_input", "firstname_input", "phone_number", "email_address",
+            </summary>
+            <param name="buyCar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CarValueApi.Data.SqlCarValueAppRepo.GetCommandByID(System.Int32)">
+            <summary>
+            worijforijfiorjf nrioje
+            eoirfheiofepokeprk eporc 
+            elroj
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CarValueApi.Model.Command.Make">
+            <summary>
+            This property is to get the Make of the car
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.Model">
+            <summary>
+             This property is to get the Model of the car
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.Year">
+            <summary>
+             This property is to get the Year the Car was manufactured
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.Color">
+            <summary>
+             This property is to get the Color of the Car
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.Price">
+            <summary>
+             This property is to get the Price of the car 
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.YearOfPurchase">
+            <summary>
+             This property is to get the Year the car was purchased
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.Mileage">
+            <summary>
+             This property is to get the total milage the car has moved
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.ID">
+            <summary>
+            The Id as automatically generated from the database and it is a primary key
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.PlateNumber">
+            <summary>
+            This is the car's plate number, it a unique identifier 
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Command.CarCurrentPrice">
+            <summary>
+            The Car current price is automtically generated using the values from the year,year of purchase and milage
+            It is stored as a decimal
+            </summary>
+        </member>
+        <member name="P:CarValueApi.Model.Root.make">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
